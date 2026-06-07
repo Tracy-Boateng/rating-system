@@ -2,7 +2,22 @@
 @import "./reset.css";
 
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #ffffff;
-    color: #222;
+    margin: 0;
+    background-color: #071126;
+    color: white;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    text-align: center;
+}
+
+svg {
+    cursor: pointer;
 }
