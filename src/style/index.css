@@ -4,7 +4,7 @@
 body {
     margin: 0;
     background-color: #071126;
-    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -14,10 +14,66 @@ main {
     align-items: center;
 }
 
-.dialog {
+.dialog-box {
+    width: 750px;
+    height: 420px;
+    border: 2px solid #556677;
+    background-color: #071126;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.rating-container {
     text-align: center;
 }
 
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 svg {
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.close-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+
+    background-color: #0057ff;
+    color: white;
+
+    cursor: pointer;
+}
+
+.open-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    padding: 8px 14px;
+    border: none;
+    border-radius: 20px;
+
+    background-color: #0057ff;
+    color: white;
+
     cursor: pointer;
 }

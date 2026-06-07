@@ -1,6 +1,10 @@
 function Dialog({ closeDialog }) {
+
     return (
-        <button onClick={closeDialog}>
+        <button
+            className="close-btn"
+            onClick={closeDialog}
+        >
             CLOSE DIALOG
         </button>
     );

@@ -1,22 +1,24 @@
-import { useState } from "react";
-import Star from "./Star";
+import { useState } from 'react';
+import Star from './Star';
 
 function StarRating() {
 
     const [rating, setRating] = useState(0);
 
     const messages = [
-        "",
-        "Poor",
-        "Fair",
-        "Good",
-        "Very good",
-        "Excellent"
+        '',
+        'Poor',
+        'Fair',
+        'Good',
+        'Very Good',
+        'Excellent'
     ];
 
     return (
-        <>
-            <div>
+        <div className="rating-container">
+
+            <div className="stars">
+
                 {[1, 2, 3, 4, 5].map((star) => (
                     <Star
                         key={star}
@@ -24,10 +26,12 @@ function StarRating() {
                         onClick={() => setRating(star)}
                     />
                 ))}
+
             </div>
 
             <h2>{messages[rating]}</h2>
-        </>
+
+        </div>
     );
 }
 

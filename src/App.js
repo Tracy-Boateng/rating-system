@@ -1,6 +1,6 @@
-import { useState } from "react";
-import StarRating from "./components/StarRating";
-import Dialog from "./components/Dialog";
+import { useState } from 'react';
+import StarRating from './components/StarRating';
+import Dialog from './components/Dialog';
 
 function App() {
 
@@ -10,14 +10,25 @@ function App() {
         <main>
 
             {showDialog && (
-                <div className="dialog">
+                <div className="dialog-box">
+
                     <StarRating />
+
+                    <Dialog
+                        closeDialog={() => setShowDialog(false)}
+                    />
+
                 </div>
             )}
 
-            <Dialog
-                closeDialog={() => setShowDialog(false)}
-            />
+            {!showDialog && (
+                <button
+                    className="open-btn"
+                    onClick={() => setShowDialog(true)}
+                >
+                    OPEN DIALOG
+                </button>
+            )}
 
         </main>
     );
