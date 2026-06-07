@@ -1,4 +1,5 @@
 # Rating System
+![alt text](image-1.png)
 
 ## Description
 
@@ -33,6 +34,8 @@ Represents a single star and calls a function passed from the parent component w
 ### Dialog
 
 Displays a message and includes a button to close the dialog.
+
+
 
 ## Git Repository
 
